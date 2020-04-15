@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<div class="topnav">
+  <div class="navbar" id="myNavbar"> 
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div class="rightbar">
+      <a href="about.html" class="itembar">ABOUT</a>
+      <a href="us.html" class="itembar"><i class="fa fa-user"></i> TEAM</a>
+      <a href="events.html" class="itembar"><i class="fa fa-th"></i>EVENTS</a>
+      <a href="gallery.html" class="itembar"><i class="fa fa-picture-o" aria-hidden="true"></i> GALLERY</a>
+      <a href="contacts.html" class="itembar"><i class="fa fa-envelope"></i> CONTACT</a>  
+</div>
+<header class="head" id="home">
+  <div class="text" style="padding:250px; color:white">
+    <img class="head">
+    <p class="design">
+    Start something that matters<br>
+    <br>
+    Stop wasting valuable time with projects that just isn't you.
+    <p><a href="#about" "opacity=0.6">Learn more</a></p>
+    <object width="300" height="200" data="logo.jpg" align="right"></object>
+  </div> 
+</header>
+<div class="container" background-image: url("1a.jpg") style="width:100%; color:white"; style="padding:128px 16px" id="about">
+  <h3><impact><i class="fa fa-users fa-3" aria-hidden="true"></i> WHO WE ARE</impact></h3>
+  <br>
+  <div class="grid-container">
+    <div class="column" >
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i><b>Responsible</b>
+      <p>We at shikksha sponsor the poor needy students,guiding them throughout their studies,providing for their educational needs <b>full responsibility.</b></p>
+    </div>
+   <div class="column">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i><b>Passion</b>
+      <p>Our team members are all driven by their passion to do all they can to eduate every corner of india.</p>
+    </div>
+    <div class="column" >
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i><b>Diamond</b>
+      <p>every individual comes with his or her own set of skills,a diamond in rough waiting to be discovered.
+      </p>
+    </div>
+    <div class="column">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i><b>Support</b>
+      <p> A simple 20 Rs contribution counts for a new notebook for the needy children out there.  <a href="register.html">donate now</a>. <span>we account for every single rupee you donate.</p>
+    </div>
+  </div>
+</div>
+</div>
+<h2><em>Meet The Team</em></h2>
+<br>
+
+<div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="iron.jpg" alt="tony" width=100>
+      <div class="grid-container">
+        <h2>anthony edward stark</h2>
+        <p class="title">CEO & Founder</p>
+        <p>genius,billionare,playboy,philanthrophist</p>
+        <p>****@starkenterprises.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="nat.jpg" alt="tony" width=100>
+      <div class="grid-container">
+        <h2>anthony edward stark</h2>
+        <p class="title">CEO & Founder</p>
+        <p>genius,billionare,playboy,philanthrophist</p>
+        <p>****@starkenterprises.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div><div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="strange.jpg" alt="tony" width=100>
+      <div class="grid-container">
+        <h2>anthony edward stark</h2>
+        <p class="title">CEO & Founder</p>
+        <p>genius,billionare,playboy,philanthrophist</p>
+        <p>****@starkenterprises.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+<div class="callout">
+  <div class="callout-header">REACH US.REACH THEM!</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">X</span>
+  <div class="callout-container">
+    <p>your small contribution can go a long way in helping in these underpreviliged <b><a href="register.html">donate now.</b></a></p>
+  </div>
+</div>
+<div class="footer">
+  <pre>
+<a href="https://www.facebook.com/shikshaekabhiyaan/"><i class="fa fa-facebook  fa-3x" aria-hidden="true"></a></i> <i class="fa fa-instagram  fa-3x" aria-hidden="true"></i> <a href="contacts.html"><i class="fa fa-whatsapp  fa-3x" aria-hidden="true"></i></a> <i class="fa fa-envelope  fa-3x" aria-hidden="true"></i>
+</pre>
+</div>
+<script src="https://use.fontawesome.com/cc4790ef95.js"></script>
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
