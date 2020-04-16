@@ -1,220 +1,142 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 
 * {
   box-sizing: border-box;
 }
 
-img {
-  vertical-align: middle;
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width:10%;
 }
 
-.container {
-  position: relative;
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
-
-.mySlides {
-  display: none;
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
 
-.cursor {
-  cursor: pointer;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 </style>
+</head>
 <body>
 
-<header>
-<h2 style="text-align:center">A glimpse at our children</h2>
-</header>
-<div class="container">
-  <div class="mySlides">1/10</div>
-    <img src="1.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2/10</div>
-    <img src="2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3/10</div>
-    <img src="3.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4/10</div>
-    <img src="4.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5/10</div>
-    <img src="5.jpg" style="width:100%">
-  </div>
-    
+<h2>Contagious smiles</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="1.jpg">
+      <img src="1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
   
-  <div class="mySlides">
-    <div class="numbertext">6/10</div>
-    <img src="6.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
-    <div class="numbertext">7/10</div>
-    <img src="7.jpg" style="width:100%">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="2.jpg">
+      <img src="2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
-  <div class="mySlides">
-    <div class="numbertext">8/10</div>
-    <img src="8.jpg" style="width:100%">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3.jpg">
+      <img src="3.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
-  <div class="mySlides">
-    <div class="numbertext">9/10</div>
-    <img src="9.jpg" style="width:100%">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.jpg">
+      <img src="4.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
-  <div class="mySlides">
-    <div class="numbertext">10/10</div>
-    <img src="10.jpg" style="width:100%">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="5.jpg">
+      <img src="5.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
-    </div>
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="6.jpg">
+      <img src="6.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="concentrating ">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="block reasoning">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="test results">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="girls classroom">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="rural class">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(6)" alt="playtime">
-    </div>
-     </div>    
-    <div class="column">
-      <img class="demo cursor" src="7.jpg" style="width:100%" onclick="currentSlide(7)" alt="playtime">
-    </div>
-     </div>    
-    <div class="column">
-      <img class="demo cursor" src="8.jpg" style="width:100%" onclick="currentSlide(8)" alt="playtime">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="9.jpg" style="width:100%" onclick="currentSlide(9)" alt="playtime">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(10)" alt="playtime">
-    </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="7.jpg">
+      <img src="7.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  
   </div>
 </div>
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="8.jpg">
+      <img src="8.jpg" alt="Forest" width="600" height="400">
+    </a>
+    </div>
+</div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="9.jpg">
+      <img src="9.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+  </div>
+</div>
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="10.jpg">
+      <img src="10.jpg" alt="Mountains" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 </body>
 </html>

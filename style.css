@@ -74,24 +74,24 @@ background-size: cover}
 }
 
 .callout-header {
-  padding: 25px 15px;
-  background: #555;
-  font-size: 30px;
+  padding: 18px 10px;
+  background: #16A085 ;
+  font-size: 22px;
   color: white;
 }
 
 .callout-container {
   padding: 15px;
-  background-color: #ccc;
+  background-color:#76D7C4;
   color: black
 }
 
 .closebtn {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 15px;
   color: white;
-  font-size: 30px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -99,5 +99,5 @@ background-size: cover}
   color: lightgrey;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(118, 215, 196 , 0.2);
 }
