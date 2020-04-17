@@ -2,7 +2,7 @@
 html {
   box-sizing: border-box;
 }
-
+.body{font-family: Arial, Helvetica, sans-serif;}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -54,7 +54,6 @@ html {
 .button:hover {
   background-color: #555;
 }
-.
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
